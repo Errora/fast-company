@@ -12,7 +12,7 @@ const Users = () => {
         (number === 0) ? `Никто с тобой не тусанет :(` :
         `${number} человек тусанет с тобой сегодня`;
   };
-  
+
   const getPhraseClasses = () => {
     let classes = "badge "
     classes += usersCount === 0 ? "bg-danger" : "bg-primary"
