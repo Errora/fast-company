@@ -24,7 +24,7 @@ const Users = () => {
           </span>
         ))}
         </td>
-        <td>{user.profession}</td>
+        <td>{user.profession.name}</td>
         <td>{user.completedMeetings}</td>
         <td>{user.rate}</td>
         <td>
