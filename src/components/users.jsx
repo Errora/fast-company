@@ -47,19 +47,7 @@ const Users = () => {
           </tr>
         </thead>
         <tbody>
-          <tr key = 'tr'>
-            <td>{user.name}</td>
-            <td>{user.qualities}</td>
-            <td>{user.profession}</td>
-            <td>{user.completedMeetings}</td>
-            <td>{user.rate}</td>
-            <td
-              className = "btn btn-danger"
-              onClick = {() => handleDelete(user)}
-            >
-              Delete
-            </td>
-          </tr>
+
         </tbody>
       </table>
     </>
