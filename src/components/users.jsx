@@ -64,7 +64,7 @@ const Users = () => {
               </th>
             </tr>
           </thead>
-          <tbody>{renderUsers(users)}</tbody>
+          <tbody>{renderUsers()}</tbody>
         </table>
       )}
     </>
