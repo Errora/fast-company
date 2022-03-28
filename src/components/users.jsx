@@ -3,7 +3,7 @@ import api from '../api';
 
 const Users = () => {
   const [users, setUsers] = useState(api.users.fetchAll());
-  const [usersCount, setUsersCount] = useState(users.length);
+  const usersCount = users.length;
 
   const renderPhrase = (number) => {
     return (number === 2) ? `${number} человека тусанет с тобой сегодня` :
@@ -21,7 +21,7 @@ const Users = () => {
 
   const handleDelete = (userId) => {
     setUsers(prevState => prevState.filter(user => user !== userId));
-    setUsersCount(prevState => prevState - 1);
+    // setUsersCount(prevState => prevState - 1);
   }
 
   const renderUsers = () => {
