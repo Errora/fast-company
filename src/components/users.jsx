@@ -21,7 +21,6 @@ const Users = () => {
 
   const handleDelete = (userId) => {
     setUsers(prevState => prevState.filter(user => user !== userId));
-    // setUsersCount(prevState => prevState - 1);
   }
 
   const renderUsers = () => {
