@@ -12,8 +12,10 @@ function App() {
   }
 
   const handleToggleBookmark = (id) => {
-    // const newUsers = users.map((user) => (user._id == id) ? status = false : status = true);
-    // setUsers(newUsers);
+    const newUsers = users.map((user) =>
+      (user._id === id) ? console.log('1') : console.log('2'));
+      // (user._id == id) ? user.bookmark = false : user.bookmark = true);
+    setUsers(newUsers);
   }
 
   return (
