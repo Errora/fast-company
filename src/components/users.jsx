@@ -2,32 +2,21 @@ import React from "react";
 import User from "./user";
 
 const Users = ({users, ...rest}) => {
+  console.log('users ', users)
+  console.log('rest ',rest)
   return (
     <>
       {users.length > 0 && (
         <table className = 'table'>
           <thead>
             <tr key = 'header'>
-              <th key = 'Name' scope = 'col'>
-                Имя
-              </th>
-              <th key = 'Qualities' scope = 'col'>
-                Качества
-              </th>
-              <th key = 'Profession' scope = 'col'>
-                Профессия
-              </th>
-              <th key = 'CompletedMeetings' scope = 'col'>
-                Встретился, раз
-              </th>
-              <th key = 'Rate' scope = 'col'>
-                Оценка
-              </th>
-              <th key = 'Bookmark' scope = 'col'>
-                Избранное
-              </th>
-              <th key = 'Button' scope = 'col'>
-              </th>
+              <th scope = 'col'>Имя</th>
+              <th scope = 'col'>Качества</th>
+              <th scope = 'col'>Профессия</th>
+              <th scope = 'col'>Встретился, раз</th>
+              <th scope = 'col'>Оценка</th>
+              <th scope = 'col'>Избранное</th>
+              <th scope = 'col'></th>
             </tr>
           </thead>
           <tbody>

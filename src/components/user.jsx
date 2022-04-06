@@ -1,7 +1,8 @@
 import React from "react";
 import Bookmark from "./bookmark";
 
-const User = ({name, _id, qualities, profession, completedMeetings, rate, onDelete}) => {
+const User = ({name, _id, qualities, profession, completedMeetings, rate, onDelete, onToggleBookmark}) => {
+  console.log('onToggleBookmark', onToggleBookmark)
   return (
     <tr key={_id}>
       <td>{name}</td>
@@ -13,7 +14,7 @@ const User = ({name, _id, qualities, profession, completedMeetings, rate, onDele
       <td>{profession.name}</td>
       <td>{completedMeetings}</td>
       <td>{rate}</td>
-      <td ><Bookmark status={'off'}/></td>
+      <td><Bookmark status={false}/></td>
       <td>
         <button className="btn btn-danger" onClick={()=>{onDelete(_id)}}>Delete</button>
       </td>

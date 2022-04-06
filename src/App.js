@@ -12,13 +12,14 @@ function App() {
   }
 
   const handleToggleBookmark = (id) => {
-    console.log('handleToggleBookmark: ', id);
+    // const newUsers = users.map((user) => (user._id == id) ? status = false : status = true);
+    // setUsers(newUsers);
   }
 
   return (
     <div>
       <SearchStatus length={users.length}/>
-      <Users users={users} onDelete={handleDelete} onClick={handleToggleBookmark}/>
+      <Users users={users} onDelete={handleDelete} onToggleBookmark={handleToggleBookmark}/>
     </div>
   )
 }
