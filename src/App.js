@@ -12,13 +12,8 @@ function App() {
   }
 
   const handleToggleBookmark = (id) => {
-    const newUsers = users.map((user) => {
-      if (user._id === id) {
-      user.bookmark === false ? user.bookmark = true : user.bookmark = false
-      }
-      return user
-    });
-    setUsers(newUsers);
+    console.log('handleBookmark: ', id);
+    setUsers(users.map(user => user._id === id ? {...user, bookmark: !user.bookmark} : {...user}))
   }
 
   return (

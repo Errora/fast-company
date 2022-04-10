@@ -2,8 +2,6 @@ import React from "react";
 import User from "./user";
 
 const Users = ({users, ...rest}) => {
-  console.log('users ', users)
-  console.log('rest ',rest)
   return (
     <>
       {users.length > 0 && (
