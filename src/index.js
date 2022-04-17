@@ -17,10 +17,9 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-
 import React from "react";
 import reactDom from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import App from "./App";
 
-reactDom.render(<App/>, document.getElementById('root'));
+reactDom.render(<App />, document.getElementById("root"));
